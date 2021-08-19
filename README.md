@@ -4,6 +4,7 @@ The model has three main components
  * `Hessian` to calculate the hessian matrix per channel
  * `Smoothness` to calculate a smoothness value per channel
 
+The **smoothness value** is the negative mean, of the sums, of the squared elements, of the per pixel hessian matrices.
 ## Usage
 The smoothness module can be applied to neural network outputs and
 the resulting value can be substracted from the loss to
