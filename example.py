@@ -18,7 +18,7 @@ from torch.optim import SGD
 x_opt = Parameter(deepcopy(x), requires_grad=True)
 
 opt = SGD([x_opt], lr=1e3)
-from smooth import Smoothness, smoothness
+from smooth import Smoothness
 smoothness = Smoothness(kernel_size=2).to(device)
 
 from tqdm import trange
